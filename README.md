@@ -103,7 +103,7 @@ philosophy: "Performance is not optional — it's the foundation"
 <tr>
 <td width="50%" align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=w1zardz&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&ring_color=58a6ff" alt="GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=w1zardz&show_icons=true&count_private=true&include_all_commits=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&ring_color=58a6ff" alt="GitHub Stats" />
 
 </td>
 <td width="50%" align="center">
