@@ -61,31 +61,23 @@ philosophy: "If it's not fast — it's broken"
 <table>
 <tr>
 <td align="center" width="25%">
-<img width="60" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-commit-agile-flaticons-flat-flat-icons.png"/>
-<br/><br/>
-<strong style="font-size:24px;">12,847</strong>
-<br/>
+<h1>🔥</h1>
+<h3>12,847</h3>
 <sub>Total Commits</sub>
 </td>
 <td align="center" width="25%">
-<img width="60" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-pull-request-agile-flaticons-flat-flat-icons.png"/>
-<br/><br/>
-<strong style="font-size:24px;">2,814,293</strong>
-<br/>
+<h1>💻</h1>
+<h3>2,814,293</h3>
 <sub>Lines of Code</sub>
 </td>
 <td align="center" width="25%">
-<img width="60" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-project-management-agile-flaticons-flat-flat-icons.png"/>
-<br/><br/>
-<strong style="font-size:24px;">143</strong>
-<br/>
+<h1>🚀</h1>
+<h3>143</h3>
 <sub>Projects Shipped</sub>
 </td>
 <td align="center" width="25%">
-<img width="60" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-fire-agile-flaticons-flat-flat-icons.png"/>
-<br/><br/>
-<strong style="font-size:24px;">387</strong>
-<br/>
+<h1>⚡</h1>
+<h3>387</h3>
 <sub>Day Max Streak</sub>
 </td>
 </tr>
