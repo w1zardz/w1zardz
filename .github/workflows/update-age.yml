@@ -1,0 +1,42 @@
+name: Update Age
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # every day at midnight UTC
+  workflow_dispatch: # manual trigger
+  push:
+    branches: [main, master]
+
+jobs:
+  update-age:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update age in README
+        run: |
+          BIRTH="2003-06-23"
+          TODAY=$(date +%Y-%m-%d)
+
+          BIRTH_Y=$(echo $BIRTH | cut -d- -f1)
+          BIRTH_M=$(echo $BIRTH | cut -d- -f2)
+          BIRTH_D=$(echo $BIRTH | cut -d- -f3)
+
+          TODAY_Y=$(date +%Y)
+          TODAY_M=$(date +%m)
+          TODAY_D=$(date +%d)
+
+          AGE=$((TODAY_Y - BIRTH_Y))
+          if [ "$TODAY_M" -lt "$BIRTH_M" ] || ([ "$TODAY_M" -eq "$BIRTH_M" ] && [ "$TODAY_D" -lt "$BIRTH_D" ]); then
+            AGE=$((AGE - 1))
+          fi
+
+          sed -i "s/age: .*/age: $AGE/" README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (git add README.md && git commit -m "Update age to $(date +%Y)" && git push)
