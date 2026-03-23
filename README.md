@@ -22,6 +22,8 @@
 
 ```yaml
 name: Nikita
+age: 22
+birthday: June 23, 2003
 location: Russia
 role: Server Architect & Full-Stack Developer
 
