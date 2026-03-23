@@ -30,7 +30,7 @@ role: Server Architect & Full-Stack Developer
 career:
   started: 2016
   years_of_experience: 10
-  first_language: Pawn (SA-MP / MTA)
+  first_language: 22
 
   milestones:
     2016: "Started game server development (Pawn/C++)"
