@@ -11,7 +11,7 @@
 <br/>
 
 <!-- Profile views -->
-<img src="https://komarev.com/ghpvc/?username=w1zardz&label=Profile%20Views&color=161b22&style=for-the-badge&labelColor=0d1117" alt="Profile views"/>
+<img src="https://visitcount.itsvg.in/api?id=w1zardz&label=Profile%20Views&color=0&icon=0&pretty=true" alt="Profile views"/>
 
 <br/><br/>
 
