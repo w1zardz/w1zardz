@@ -11,7 +11,7 @@
 <br/>
 
 <!-- Profile views -->
-<img src="https://visitcount.itsvg.in/api?id=w1zardz&label=Profile%20Views&color=0&icon=0&pretty=true" alt="Profile views"/>
+<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fw1zardz&count_bg=%23161b22&title_bg=%230d1117&title=Profile+Views&edge_flat=true" alt="Profile views"/>
 
 <br/><br/>
 
