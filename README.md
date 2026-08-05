@@ -77,17 +77,17 @@ principles:
 <tr>
 <td align="center" width="25%">
 <h1>🗂</h1>
-<h3>72</h3>
+<h3>26</h3>
 <sub>Repositories</sub>
 </td>
 <td align="center" width="25%">
 <h1>🔒</h1>
-<h3>64%</h3>
+<h3>0%</h3>
 <sub>Private Work</sub>
 </td>
 <td align="center" width="25%">
 <h1>🧩</h1>
-<h3>10</h3>
+<h3>4</h3>
 <sub>Languages Shipped</sub>
 </td>
 <td align="center" width="25%">
@@ -100,13 +100,11 @@ principles:
 
 <br/>
 
-![JavaScript](https://img.shields.io/badge/JavaScript-23_repos-58a6ff?style=for-the-badge&labelColor=0d1117)
-![Python](https://img.shields.io/badge/Python-10_repos-58a6ff?style=for-the-badge&labelColor=0d1117)
-![PHP](https://img.shields.io/badge/PHP-9_repos-58a6ff?style=for-the-badge&labelColor=0d1117)
-![Vue](https://img.shields.io/badge/Vue-4_repos-58a6ff?style=for-the-badge&labelColor=0d1117)
-![TypeScript](https://img.shields.io/badge/TypeScript-2_repos-58a6ff?style=for-the-badge&labelColor=0d1117)
+![JavaScript](https://img.shields.io/badge/JavaScript-8_repos-58a6ff?style=for-the-badge&labelColor=0d1117)
+![PHP](https://img.shields.io/badge/PHP-2_repos-58a6ff?style=for-the-badge&labelColor=0d1117)
+![PowerShell](https://img.shields.io/badge/PowerShell-1_repos-58a6ff?style=for-the-badge&labelColor=0d1117)
 
-![Pushed this year](https://img.shields.io/badge/Pushed_this_year-53_repos-c9d1d9?style=for-the-badge&labelColor=0d1117)
+![Pushed this year](https://img.shields.io/badge/Pushed_this_year-25_repos-c9d1d9?style=for-the-badge&labelColor=0d1117)
 ![Stars](https://img.shields.io/badge/Stars-28-c9d1d9?style=for-the-badge&labelColor=0d1117)
 
 <sub>Regenerated daily from the GitHub GraphQL API, private repositories
@@ -126,16 +124,12 @@ included. Nothing in this block is typed by hand.</sub>
 ```
  Language     Repos   Primary   Reach                  Level
 ───────────────────────────────────────────────────────────────────
- JavaScript      27        23   ████████░░░░░░░░░░░░   Expert
- Python          13        10   ████░░░░░░░░░░░░░░░░   Advanced
- PHP             12         9   ███░░░░░░░░░░░░░░░░░   Master
- TypeScript       6         2   ██░░░░░░░░░░░░░░░░░░   Expert
- Vue              4         4   █░░░░░░░░░░░░░░░░░░░   Advanced
- Lua              1         1   ░░░░░░░░░░░░░░░░░░░░   Advanced
- Ruby             1         1   ░░░░░░░░░░░░░░░░░░░░   
- Rust             1         0   ░░░░░░░░░░░░░░░░░░░░   Intermediate
+ JavaScript       8         8   ██████░░░░░░░░░░░░░░   Expert
+ PHP              2         2   ██░░░░░░░░░░░░░░░░░░   Master
+ PowerShell       1         1   █░░░░░░░░░░░░░░░░░░░   
+ Python           1         0   █░░░░░░░░░░░░░░░░░░░   Advanced
 ───────────────────────────────────────────────────────────────────
- across 72 repositories, 46 of them private
+ across 26 repositories, 0 of them private
 ```
 
 <sub><b>Repos</b> — repositories where the language is at least 5% of the code.
