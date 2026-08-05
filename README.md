@@ -22,7 +22,7 @@
 
 ```yaml
 name: Nikita
-age: 22
+age: 23
 birthday: June 23, 2003
 location: Russia
 role: Server Architect & Full-Stack Developer
@@ -30,7 +30,7 @@ role: Server Architect & Full-Stack Developer
 career:
   started: 2016
   years_of_experience: 10
-  first_language: 22
+  first_language: Pawn (SA-MP / MTA)
 
   milestones:
     2016: "Started game server development (Pawn/C++)"
