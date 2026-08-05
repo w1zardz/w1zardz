@@ -1,0 +1,65 @@
+name: Profile
+
+on:
+  schedule:
+    - cron: '17 3 * * *' # daily, off the hour to avoid GitHub's peak-minute queue
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - '.github/scripts/**'
+      - '.github/workflows/profile.yml'
+
+concurrency:
+  group: profile
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    name: Rebuild generated sections
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild README from live GitHub data
+        env:
+          # STATS_TOKEN (classic PAT, scopes: repo + read:user) makes private
+          # repositories count toward the totals. Without it the numbers are
+          # public-only but still real.
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || github.token }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python .github/scripts/profile_stats.py
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet README.md; then
+            echo "no change"
+          else
+            git add README.md
+            git commit -m "chore(profile): refresh generated stats [skip ci]"
+            git push
+          fi
+
+      - name: Keepalive
+        run: |
+          # GitHub disables scheduled workflows after 60 days without repo
+          # activity. Push an empty commit before that window closes.
+          LAST=$(git log -1 --format=%ct)
+          DAYS=$(( ( $(date -u +%s) - LAST ) / 86400 ))
+          echo "days since last commit: $DAYS"
+          if [ "$DAYS" -ge 45 ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "chore: keepalive"
+            git push
+          fi
