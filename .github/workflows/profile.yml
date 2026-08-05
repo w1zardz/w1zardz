@@ -29,12 +29,25 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Check for STATS_TOKEN
+        id: gate
+        run: |
+          if [ -n "${{ secrets.STATS_TOKEN }}" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::STATS_TOKEN is not set. Skipping regeneration — the" \
+                 "default GITHUB_TOKEN cannot see private repositories and would" \
+                 "silently replace the real totals with public-only ones." \
+                 "Create a classic PAT with 'repo' + 'read:user' and add it as" \
+                 "the STATS_TOKEN repository secret."
+          fi
+
       - name: Rebuild README from live GitHub data
+        if: steps.gate.outputs.ok == 'true'
         env:
-          # STATS_TOKEN (classic PAT, scopes: repo + read:user) makes private
-          # repositories count toward the totals. Without it the numbers are
-          # public-only but still real.
-          GH_TOKEN: ${{ secrets.STATS_TOKEN || github.token }}
+          # Classic PAT, scopes: repo + read:user. Required — see the gate above.
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
           GH_LOGIN: ${{ github.repository_owner }}
         run: python .github/scripts/profile_stats.py
 
