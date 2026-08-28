@@ -45,6 +45,8 @@ LANG_IGNORE = {
 
 # Self-assessed proficiency. Anything absent is left blank rather than guessed.
 EXPERTISE = {
+    "Java": "Advanced",
+    "Kotlin": "Intermediate",
     "PHP": "Master",
     "Pawn": "Master",
     "TypeScript": "Expert",
