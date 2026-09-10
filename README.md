@@ -499,6 +499,9 @@ server core lives.
 <a href="https://github.com/w1zardz/bedrock-glyph-viewer">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=w1zardz&repo=bedrock-glyph-viewer&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" alt="bedrock-glyph-viewer"/>
 </a>
+<a href="https://github.com/w1zardz/amnezia-vpn-russia-split-tunneling" title="Список российских сайтов для Amnezia VPN — раздельное туннелирование в РФ">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=w1zardz&repo=amnezia-vpn-russia-split-tunneling&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" alt="Список российских сайтов для Amnezia VPN — раздельное туннелирование в РФ"/>
+</a>
 
 </div>
 
